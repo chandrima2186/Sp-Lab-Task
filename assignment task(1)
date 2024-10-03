@@ -17,6 +17,7 @@ int main()
 }
 
 
+
 /*Problem(2): Odd or Even
 Write a C program to check whether a given number is odd or even using an if-else statement.*/
 
@@ -34,6 +35,7 @@ int main()
 
 
 
+
 /*Problem(3): Largest of Three Numbers
 Write a C program to find the largest of three numbers using nested if-else conditions.*/
 
@@ -46,27 +48,19 @@ int main()
     {
 
         if(a>=c){
-
-            printf("Largest number %d\n",a);}
-
+         printf("Largest number %d\n",a);}
             else{
-
             printf("Largest number %d\n",c);}}
-
             else{
-
             if(b>=c){
-
                 printf("Largest number %d\n",b);}
-
             else{
-
-                printf("Largest number %d\n",c);}
-
+            printf("Largest number %d\n",c);}
         }
-
     return 0;
 }
+
+
 
 
 /*Problem(4): Positive, Negative or Zero
@@ -83,8 +77,8 @@ int main()
         printf("Negative\n");
     else
         printf("Zero\n");
-    return 0;
-}
+    return 0;}
+
 
 
 /*Problem(5): Simple Calculator
@@ -124,9 +118,53 @@ int main()
     printf("Not a valid operator:");
     }
     return 0;
-
-
 }
+
+
+
+
+/*Problem(6): Triangle Validity Checker
+Write a program that takes the lengths of three sides of a triangle and determines if the triangle is valid based on the
+conditions of a valid triangle using conditional statements.*/
+
+#include<stdio.h>
+int main(){
+ double tri_side1,tri_side2,tri_side3;
+
+ scanf("%lf %lf %lf",&tri_side1,&tri_side2,&tri_side3);
+
+ if(tri_side1+tri_side2>tri_side3 && tri_side2+tri_side3>tri_side1 && tri_side1+tri_side3>tri_side2)
+{
+    printf("Triangle is valid");}
+    else{
+        printf("Triangle is not valid");}
+
+return 0;
+}
+
+
+
+
+/*Problem(7): Reverse a Number
+Write a C program to reverse a given integer using a while loop.*/
+
+#include <stdio.h>
+
+int main() {
+    int n,m ,r;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    while (n != 0) {
+        r = n% 10;
+        m = m * 10 +r;
+        n =n/ 10;
+    }
+    printf(" %d\n",m);
+
+    return 0;
+}
+
+
 
 
 

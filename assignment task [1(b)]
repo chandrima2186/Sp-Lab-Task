@@ -1,0 +1,143 @@
+/*Problem(8): Area of a CIrcle
+Write a program to calculate the area of a circle given its radius.*/
+
+#include<stdio.h>
+int main()
+{
+    float radious,area;
+    scanf("%f",&radious);
+    area=3.1416*radious*radious;
+    printf("Area of Circle:%.2f\n",area);
+    return 0;
+}
+
+
+/*Problem(9): Find Maximum Element in Array
+Write a C program to find the maximum element in an array using loops and conditional statements.*/
+
+#include <stdio.h>
+
+int main() {
+    int n,max;
+    printf("How many numbers:");
+    scanf("%d", &n);
+
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    max = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    printf("Maximum number : %d\n", max);
+
+    return 0;
+}
+
+
+
+
+
+/*Problem(10): Sum of Array Elements
+Write a program that takes an array of integers and finds the sum of its elements using a loop.*/
+
+#include <stdio.h>
+int main() {
+    int a[1000],sum=0,n;
+    printf("How many numbers:");
+    scanf("%d",&n);
+    for(int i=0; i<n; i++){
+        scanf("%d",&a[i]);}
+        for(int i=0; i<n; i++){
+                sum=sum+a[i];}
+        printf("Sum=%d\n",sum);
+
+    }
+
+
+
+
+/*Problem(11): Array Reversal
+Write a program to reverse the elements of an array using a loop.*/
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("How many numbers:");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0; i<n; i++){
+        scanf("%d",&arr[i]);
+    }
+    printf(" reverse element: ");
+    for(int i=n-1; i>=0; i--){
+        printf("%d\n",arr[i]);
+    }
+    return 0;
+
+}
+
+
+
+
+
+/*Problem(12): Sum of N natural numbers
+Write a C program to calculate the sum of the first n natural numbers using a loop.*/
+
+#include<stdio.h>
+int main()
+{
+    int n, sum;
+    printf("How many numbers:");
+    scanf("%d",&n);
+    for(int i=0; i<=n; i++){
+    sum=sum+i;
+    }
+   printf("Sum=%d\n",sum);
+   return 0;
+}
+
+
+
+
+
+/*Problem(13): Calculate Average
+Write a C program that takes five numbers as input and calculates their average.*/
+
+#include <stdio.h>
+int main() {
+    int a,b,c,d,e;
+    float average;
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    average = (float)(a+b + c + d + e) / 5;
+    printf("Average is: %.2f\n", average);
+
+    return 0;
+}
+
+
+
+
+
+/*Problem(14): Print Numbers from 1 to N
+Write a program that prints numbers from 1 to n using a loop.*/
+
+#include<stdio.h>
+int main()
+{
+  int n;
+  printf("How many numbers:");
+  scanf("%d",&n);
+  for(int i=1; i<=n; i++){
+    printf("%d\n",i);
+  }
+
+
+
+
+
+
